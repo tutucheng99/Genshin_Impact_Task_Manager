@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="task-manager">
+        <h1>Task Manager: Genshin Style</h1>
+        <div class="task-input">
+            <input type="text" id="taskName" placeholder="Task Name">
+            <input type="datetime-local" id="taskDeadline">
+            <input type="number" id="taskImportance" min="1" max="10" placeholder="Importance (1-10)">
+            <select id="taskType">
+                <option value="personal">Personal</option>
+                <option value="teamwork">Teamwork</option>
+            </select>
+            <textarea id="taskDescription" placeholder="Brief Description"></textarea>
+            <button id="addTaskButton">Add Task</button>
+        </div>
+        <ul id="taskList" class="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
